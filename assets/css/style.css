@@ -2,67 +2,67 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+}
 
+div.viewport {
+    padding-top: 100px;
 }
 
 header * {
     display: inline-block;
-    color: goldenrod;
-    margin-left: 20px;
+    color: white;
+    margin-left: 5px;
     text-decoration: none;
 
 }
 
 header {
-    background-color: maroon;
+    background-color: green;
     position: fixed;
     width: 100%;
     padding: 20px;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-    padding: 20px;
-  }
-
-#about {
-    padding: 20px
-}
-
-#experience {
-    background-color: gray;
-    padding: 20px;
-}
-
-#contact {
-    padding: 20px;
+#about, #experience, #applications, #contact {
+    padding: 10px;
 }
 
 .footer {
-    background-color: maroon;
-    color: goldenrod;
+    background-color: green;
+    color: white;
     padding: 10px;
     text-align: center;
 }
 
-@media only screen and (max-width: 992px) {
+img {
+    height: 100px;
+    width: 200px;
+}
+
+.experience-container {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    flex-basis: 100px;
+    flex: 1;
+}
+
+@media only screen and (min-width: 950px) {
     body {
-        background-color: lightblue;
+        background-color: grey;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
     body {
-        background-color: lightblue;
+        background-color: pink;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 650px) {
     body {
-        background-color: lightblue;
+        background-color: gold;
     }
 }
