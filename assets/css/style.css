@@ -129,6 +129,17 @@ footer {
         flex-direction: row;
     }
 
+    aside {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: var(--aside-background-color);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-right: 3px solid var(--aside-background-color) ;
+        min-width: 225px;
+        text-align: center;
+    }
+
     .box {
         display: flex;
     }
@@ -138,6 +149,10 @@ footer {
         display: flex;
         justify-content: center;
         flex-direction: row;
+    }
+
+    .box-c a {
+        padding-top: 25px;
     }
 
     .box-c {
