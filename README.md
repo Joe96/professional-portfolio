@@ -30,9 +30,8 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 ## Screenshots
+![Portfolio](https://user-images.githubusercontent.com/17390256/133717349-37475947-c595-47c9-bb51-7f1ebf2a93b9.png)
 
-The following animation shows the web application's appearance and functionality:
-
-![portfolio demo](./Assets/02-advanced-css-homework-demo.gif)
+![Portfolio2](https://user-images.githubusercontent.com/17390256/133717358-688c82d2-98de-43b8-a0bc-9585a3d40410.PNG)
 
 ## Links to the gitpage
