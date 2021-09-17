@@ -1,5 +1,17 @@
+:root{
+    font-family: 'Times New Roman', Times, serif;
+    --background-color: #FFFFFF;
+    --aside-background-color: #191919;
+    --header-color: #DABD84;
+}
+
 body {
-    background-color: #ccc;
+    background-color: var(--background-color);
+}
+
+.viewport {
+    height: 100vh;
+    width: 100vw;
 }
   
 header * {
@@ -9,7 +21,7 @@ header * {
 }
 
 nav {
-    background-color: #DABD84 ;
+    background-color: var(--header-color);
     position: flex;
     width: 100%;
     padding: 20px;
@@ -17,27 +29,52 @@ nav {
 }
 
 nav ul li {
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+li:hover {
+    background-color: var(--aside-background-color);
 }
 
 div.container {
     display: flex;
     height: max-content;
+    flex-direction: row;
 }
 
-aside {
-    color: #DABD84;
-    background-color: #191919;
-    border: 1px solid #ffffff ;
-    padding: 12px;
-    min-width: 225px;
+.box-c a, .item-a a {
+    font-size: x-small;
+    background-color: var(--aside-background-color);
+    color: white;
+    padding: 14px 25px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 25px;
 }
 
 img {
     width: 200px;
     height: 200px;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+aside {
+    background-color: var(--aside-background-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-right: 3px solid var(--aside-background-color) ;
+    min-width: 225px;
+    text-align: center;
+}
+
+h2 {
+    color: var(--background-color);
 }
 
 main {
@@ -47,19 +84,35 @@ main {
     flex-wrap: wrap;
 }
 
-.box {
+.box-a, .box-c {
     display: flex;
     justify-content: center;
-
+    flex-direction: row;
 }
 
-.one {
-    flex: 2 1 300px;
-    border: 5px solid red;
+#pong {
+    background-image: url("https://cdn.uconnectlabs.com/wp-content/uploads/sites/25/2021/01/video-game-pic.jpg") ;
+}
+
+#translator {
+    background-image: url("https://frenchly.us/wp-content/uploads/sites/9/2018/12/google-translate-773x420.jpg") ;
+}
+
+#website {
+    background-image: url("https://media.istockphoto.com/photos/office-responsive-devices-web-design-website-picture-id1201166649?k=20&m=1201166649&s=612x612&w=0&h=oLpzLwZhmRe9mFObnylKkE-xJbyYesh8l0Zxucb03gM=") ;
+}
+
+
+.item, .item-a, .item-c{
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    border: 1px solid red;
 }
 
 footer {
-    background-color: #DABD84 ;
+    background-color: var(--header-color) ;
     color: FFF;
     display: flex;
     justify-content: center;
@@ -67,19 +120,148 @@ footer {
 
 @media only screen and (min-width: 1200px) {
     body {
-        background-color: grey;
+        background-color: white;
+    }
+
+    div.container {
+        display: flex;
+        height: max-content;
+        flex-direction: row;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .box-a {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .box-c {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .item {
+        height: 300px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
+    }
+
+    .item-a {
+        height: 200px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
+    }
+
+    .item-c {
+        height: 25px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     body {
-        background-color: pink;
+        background-color: white;
     }
+
+    div.container {
+        display: flex;
+        height: max-content;
+        flex-direction: row;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .box-a {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .box-c {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .item {
+        height: 300px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
+    }
+
+    .item-a {
+        height: 200px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: gold;
-      
+    div.container {
+        display: flex;
+        height: max-content;
+        flex-direction: column;
+    }
+
+    aside {
+        background-color: var(--aside-background-color);
+        border-right: 3px solid var(--aside-background-color) ;
+        min-width: 225px;
+        text-align: center;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .box-a {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box-c {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .item {
+        height: 200px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
+    }
+
+    .item-a {
+        height: 500px;
+        text-align: center;
+        align-items: center;
+        flex: 1;
+        border: 1px solid red;
     }
 }
