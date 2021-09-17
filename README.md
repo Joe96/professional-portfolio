@@ -35,3 +35,4 @@ THEN I am presented with a responsive layout that adapts to my viewport
 ![Portfolio2](https://user-images.githubusercontent.com/17390256/133717358-688c82d2-98de-43b8-a0bc-9585a3d40410.PNG)
 
 ## Links to the gitpage
+![Link](https://joe96.github.io/professional-portfolio/)
